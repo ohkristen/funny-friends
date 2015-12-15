@@ -1,18 +1,12 @@
 {
   "name": "funny-friends-app",
-  "version": "1.0.0",
-  "description": "a drawing application using MEAN stack",
-  "main": "server2.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
+  "main": "server.js",
   "dependencies": {
+    "morgan": "~1.5.0",
+    "express": "~4.10.3",
+    "body-parser": "~1.9.3",
+    "mongoose": "~3.8.19",
     "bcrypt-nodejs": "0.0.3",
-    "body-parser": "^1.14.1",
-    "express": "^4.13.3",
-    "mongoose": "^4.3.1",
-    "morgan": "^1.6.1"
+    "jsonwebtoken": "^1.2.0"
   }
 }
