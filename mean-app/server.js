@@ -10,6 +10,7 @@ var mongoose   = require('mongoose');
 var User       = require('./app/models/user');
 var port       = process.env.PORT || 8080; // set the port for our app
 var jwt        = require('jsonwebtoken');
+var path       = require('path');
 
 //superSecret for creating web tokens
 var superSecret = 'ilovetucker'
