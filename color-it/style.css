@@ -37,7 +37,7 @@
 
 	.wrapper.inner-page #header.type1, .wrapper.inner-page #header.type2 { top: -2%; height: 102%; }
 
-	.section { background-image: url(images/main-bg-image.jpeg); background-attachment: fixed; background-size: cover; } 
+	.section { background-image: url(images/main-bg-image.jpeg); background-attachment: fixed; background-size: cover; }
 
 	p { font-size:16px; line-height: 28px; font-weight: lighter; margin-bottom: 10px; }
 
@@ -768,3 +768,19 @@
 		.widget .subscribe-frm input[type="submit"], .widget #searchform input[type="submit"] { background-image:url(images/submit@2x.png); }
 		#toTop { background:url(images/ui.totop@2x.png); background-size: 40px 80px; }
 		}
+
+		/*----*****---- << Video Wrapper >> ----*****----*/
+		.videoWrapper {
+			position: relative;
+			padding-bottom: 56.25%; /* 16:9 */
+			padding-top: 25px;
+			height: 0;
+			}
+
+		.videoWrapper iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			}
