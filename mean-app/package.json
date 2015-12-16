@@ -8,5 +8,24 @@
     "mongoose": "~3.8.19",
     "bcrypt-nodejs": "0.0.3",
     "jsonwebtoken": "^1.2.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "version": "1.0.0",
+  "description": "a blind contour drawing app with MEAN stack and HTML5 - canvas",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ohkristen/funny-friends.git"
+  },
+  "author": "kristen gunn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ohkristen/funny-friends/issues"
+  },
+  "homepage": "https://github.com/ohkristen/funny-friends#readme",
+  "engines": {
+    "node": "4.2.2"
   }
 }
