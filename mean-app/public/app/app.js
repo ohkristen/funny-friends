@@ -1,27 +1,11 @@
-angular.module('friendsApp', ['routerRoutes', 'ngAnimate'])
+angular.module('userApp', ['ngAnimate', 'app.routes', 'authService', 'mainCtrl', 'userCtrl', 'userService'])
 
-// create the controller and inject Angular's
-// this will be the controller for the ENTIRE site
-.controller('mainController', function() {
+// application configuration to integrate token into requests
+.config(function($httpProvider) {
 
-    // create a bigMessage variable to display in our view
-    this.bigMessage = 'A smooth sea never made a skilled sailor.';
+	// attach our auth interceptor to the http requests
+	$httpProvider.interceptors.push('AuthInterceptor');
 
-})
-
-// home page specific controller
-.controller('homeController', function() {
-		this.message = 'This is the home page!';
-})
-
-// about page controller
-.controller('aboutController', function() {
-		this.message = 'Look! I am an about page.';
-})
-
-// contact page controller
-.controller('contactController', function() {
-		this.message = 'Contact us! JK. This is just a demo.';
 });
 
 
